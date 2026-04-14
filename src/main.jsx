@@ -7,12 +7,12 @@ import { RouterProvider } from "react-router/dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    element: <div className="text-4xl text-red-500">Hello World</div>,
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </StrictMode>,
 );
