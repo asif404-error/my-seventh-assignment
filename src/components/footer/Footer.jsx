@@ -1,8 +1,8 @@
 import React from "react";
 import logo2 from "../../assets/logo-xl.png";
-import { TbBrandInstagramFilled } from "react-icons/tb";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { BsTwitterX } from "react-icons/bs";
+import facebook from "../../assets/facebook.png"
+import instagram from "../../assets/instagram.png"
+import twitter from "../../assets/twitter.png"
 
 const Footer = () => {
   return (
@@ -19,17 +19,17 @@ const Footer = () => {
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the relationships that matter most.
         </p>
-        <p className="text-sm font-medium mb-3">Social Links</p>
+        <p className="text-xl font-medium mb-3">Social Links</p>
 
         <div className="flex justify-center gap-3 md:gap-4 mb-8">
           <a className="bg-white text-black p-2 md:p-3 rounded-full hover:opacity-80">
-            <TbBrandInstagramFilled size={18} />
+            <img src={instagram} alt="instagram-logo" />
           </a>
           <a className="bg-white text-black p-2 md:p-3 rounded-full hover:opacity-80">
-            <FaSquareFacebook size={18} />
+            <img src={facebook} alt="facebook-logo" />
           </a>
           <a className="bg-white text-black p-2 md:p-3 rounded-full hover:opacity-80">
-            <BsTwitterX size={18} />
+            <img src={twitter} alt="twitter-logo" />
           </a>
         </div>
         <div className="border-t border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-gray-400 gap-3">

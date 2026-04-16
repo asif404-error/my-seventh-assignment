@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import FriendDetails from "./pages/FriendDetails";
 import { TimelineProvider } from "./context/TimelineProvider";
 import ErrorText from "./pages/ErrorText";
+import Timeline from "./pages/Timeline";
 
 const router = createBrowserRouter([
   {
@@ -23,9 +24,13 @@ const router = createBrowserRouter([
         element: <FriendDetails />,
       },
       {
-        path:"*",
+        path: "timeline",
+        element: <Timeline />,
+      },
+      {
+        path: "*",
         element: <ErrorText />,
-      }
+      },
     ],
   },
 ]);
