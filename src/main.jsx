@@ -9,6 +9,7 @@ import FriendDetails from "./pages/FriendDetails";
 import { TimelineProvider } from "./context/TimelineProvider";
 import ErrorText from "./pages/ErrorText";
 import Timeline from "./pages/Timeline";
+import Stats from "./pages/Stats";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "timeline",
         element: <Timeline />,
+      },
+      {
+        path: "stats",
+        element: <Stats />,
       },
       {
         path: "*",
