@@ -5,6 +5,8 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
+import FriendDetails from "./pages/FriendDetails";
+import { TimelineProvider } from "./context/TimelineProvider";
 
 const router = createBrowserRouter([
   {
@@ -15,12 +17,18 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: "friend/:id",
+        element: <FriendDetails />,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TimelineProvider>
+      <RouterProvider router={router} />
+    </TimelineProvider>
   </StrictMode>,
 );
