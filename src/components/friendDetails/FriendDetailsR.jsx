@@ -45,7 +45,7 @@ const FriendDetailsR = ({ friend, interactions, setInteractions }) => {
       <div className="bg-white border border-gray-200 rounded-lg p-4">
         <div className="flex justify-between items-center mb-2">
           <p className="font-semibold text-gray-800">Relationship Goal</p>
-          <button className="text-sm text-gray-500 hover:text-gray-700">
+          <button className=" btn text-sm text-gray-500 hover:text-gray-700">
             Edit
           </button>
         </div>
