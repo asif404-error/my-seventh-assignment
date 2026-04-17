@@ -3,7 +3,7 @@ import FriendCard from "../friendCard/FriendCard";
 
 const Friends = ({ friends }) => {
   return (
-    <div className="px-4 md:px-6 lg:px-8">
+    <div className="min-h-screen max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
       <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
         Your Friends
       </h2>
