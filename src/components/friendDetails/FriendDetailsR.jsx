@@ -19,7 +19,7 @@ const FriendDetailsR = ({ friend, interactions, setInteractions }) => {
       }),
     };
     setInteractions([newEntry, ...interactions]);
-    toast.success(`${type} with ${friend.name} !`);
+    toast.success(`${type} with ${friend.name}!`);
   };
 
   return (
